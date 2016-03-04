@@ -1,6 +1,6 @@
 ﻿namespace backgroundworker
 {
-    partial class Form1
+    partial class main
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -61,6 +61,7 @@
             this.lstValeursNonTriees.Size = new System.Drawing.Size(190, 325);
             this.lstValeursNonTriees.TabIndex = 2;
             this.lstValeursNonTriees.UseCompatibleStateImageBehavior = false;
+            this.lstValeursNonTriees.View = System.Windows.Forms.View.List;
             // 
             // lstValeursTriees
             // 
@@ -69,6 +70,7 @@
             this.lstValeursTriees.Size = new System.Drawing.Size(190, 325);
             this.lstValeursTriees.TabIndex = 3;
             this.lstValeursTriees.UseCompatibleStateImageBehavior = false;
+            this.lstValeursTriees.View = System.Windows.Forms.View.List;
             // 
             // btnQuitter
             // 
@@ -78,6 +80,7 @@
             this.btnQuitter.TabIndex = 4;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // btnInitialiser
             // 
@@ -87,6 +90,7 @@
             this.btnInitialiser.TabIndex = 5;
             this.btnInitialiser.Text = "Initialiser";
             this.btnInitialiser.UseVisualStyleBackColor = true;
+            this.btnInitialiser.Click += new System.EventHandler(this.btnInitialiser_Click);
             // 
             // btnTrier
             // 
@@ -96,8 +100,9 @@
             this.btnTrier.TabIndex = 6;
             this.btnTrier.Text = "Trier";
             this.btnTrier.UseVisualStyleBackColor = true;
+            this.btnTrier.Click += new System.EventHandler(this.btnTrier_Click);
             // 
-            // Form1
+            // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,9 +114,9 @@
             this.Controls.Add(this.lstValeursNonTriees);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTaille);
-            this.Name = "Form1";
+            this.Name = "main";
             this.Text = "TriBulle";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
